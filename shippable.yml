@@ -395,3 +395,21 @@ script:
 #        - "#roomOne"
 #      on_success: always
 #      on_failure: always
+resources:
+  - name: pipelines-demo-image-mini2
+    type: image
+    integration: shipdeploy
+    pointer:
+      sourceName: "shippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamplesshippablesamples/samplepipelinesdemo"
+      isPull: false
+    seed:
+      versionName: "latest"
+
+jobs:
+  - name: pipelines-demo-manifest-mini2
+    type: manifest
+    steps:
+     - IN: pipelines-demo-image-mini
+     - TASK: managed
+    on_success:
+     - NOTIFY: irc-mini
