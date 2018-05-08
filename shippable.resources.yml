@@ -44,9 +44,9 @@ resources:
     seed:
       versionName: "latest"
 
-  - name: file
+  - name: file2
     type: file
     integration: shipdeploy
     versionTemplate:
-      sourceName: 'sourcename'
+      versionName: 'sourcename'
     seed: 'seedVal'
