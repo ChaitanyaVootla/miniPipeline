@@ -47,3 +47,6 @@ resources:
   - name: file
     type: file
     integration: shipdeploy
+    versionTemplate:
+      sourceName: 'sourcename'
+    seed: 'seedVal'
