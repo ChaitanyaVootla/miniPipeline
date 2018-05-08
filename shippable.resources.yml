@@ -48,4 +48,4 @@ resources:
     type: file
     integration: shipdeploy
     versionTemplate:
-      versionName: 'sourcename'
+      versionName: 'https://example.com'
