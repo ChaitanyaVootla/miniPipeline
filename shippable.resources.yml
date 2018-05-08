@@ -49,4 +49,3 @@ resources:
     integration: shipdeploy
     versionTemplate:
       versionName: 'sourcename'
-    seed: 'seedVal'
