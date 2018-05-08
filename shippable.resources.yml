@@ -43,3 +43,10 @@ resources:
       isPull: false
     seed:
       versionName: "latest"
+
+  - name: file
+    type: file
+    integration: shipdeploy
+    versionTemplate:
+      sourceName: sourcename
+    seed: seedval
