@@ -49,3 +49,4 @@ resources:
     integration: shipdeploy
     versionTemplate:
       versionName: 'https://example.com'
+      sourceName: 'https://example.com'
