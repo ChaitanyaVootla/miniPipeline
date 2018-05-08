@@ -47,6 +47,6 @@ resources:
   - name: file2
     type: file
     integration: shipdeploy
-    versionTemplate:
+    version:
       versionName: 'versionName-val'
       sourceName: 'sourceName-val'
