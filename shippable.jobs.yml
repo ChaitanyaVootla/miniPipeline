@@ -14,7 +14,7 @@ jobs:
     steps:
       - IN: pipelines-demo-manifest-mini
       - IN: ecs-cluster-mini
-      - IN: docker-options-mini
+      - IN: docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini
       - IN: replicas-mini
       - TASK: managed
         deployMethod: upgrade
