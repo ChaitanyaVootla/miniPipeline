@@ -15,7 +15,7 @@ resources:
     flags:
       - replicas-mini
 
-  - name: docker-options-mini
+  - name: docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini
     type: dockerOptions
     version:
       portMappings:
