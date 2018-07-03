@@ -50,7 +50,10 @@ resources:
     version:
       versionName: 'versionName-val'
       sourceName: 'sourceName-val'
-  - name: replicas
-    type: replicas
+
+  - name: params
+    type: params
     versionTemplate:
-      count: 1
+      params:
+        asd: 123
+
