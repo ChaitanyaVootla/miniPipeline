@@ -3,6 +3,7 @@ jobs:
     type: manifest
     steps:
      - IN: pipelines-demo-image-mini
+     - IN: params
      - TASK: managed
     on_success:
      - NOTIFY: irc-mini
