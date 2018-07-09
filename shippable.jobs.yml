@@ -56,13 +56,6 @@ jobs:
      - IN: mini-downstream-parent
      - TASK: managed
 
-  - name: mini-downstream-child
-    type: manifest
-    steps:
-     - IN: mini-downstream
-     - TASK: managed
-    flags:
-      - downstream
 
   - name: mini-downstream-parent
     type: runSh
