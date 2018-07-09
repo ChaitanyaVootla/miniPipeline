@@ -74,3 +74,10 @@ jobs:
       - TASK:
         - script: echo 'This block executes when the TASK starts'
         - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+  - name: mini-downstream-child
+    type: manifest
+    steps:
+     - IN: mini-downstream
+     - TASK: managed
+    flags:
+      - downstream
