@@ -16,6 +16,7 @@ resources:
       count: 2
     flags:
       - replicas-mini
+      - downstream
 
   - name: docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini-docker-options-mini
     type: dockerOptions
