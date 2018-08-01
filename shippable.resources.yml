@@ -7,6 +7,8 @@ resources:
       isPull: false
     seed:
       versionName: "latest"
+    flags:
+      - downstream
       
   - name: replicas-mini
     type: replicas
