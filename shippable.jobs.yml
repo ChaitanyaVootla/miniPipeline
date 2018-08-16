@@ -7,6 +7,9 @@ jobs:
      - TASK: managed
     on_success:
      - NOTIFY: irc-mini
+    labels:
+     - Team: 42
+     - App: shippable
 
   - name: deploy-pipelines-demo-mini
     type: deploy
