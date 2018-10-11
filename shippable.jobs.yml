@@ -22,6 +22,9 @@ jobs:
       - IN: replicas-mini
       - TASK: managed
         deployMethod: upgrade
+    labels:
+     - Team: 42
+     - App: Devel
 
   - name: runSh-mini
     type: runSh
@@ -33,6 +36,9 @@ jobs:
       - TASK:
         - script: echo 'This block executes when the TASK starts'
         - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+    labels:
+     - Team: Linus
+     - App: Devel
 
 
   - name: runSh3-mini
@@ -42,6 +48,9 @@ jobs:
       - TASK:
         - script: echo 'This block executes when the TASK starts'
         - script: echo "versionName=satble" >> $JOB_STATE/runSh3.env;
+    labels:
+     - Team: Linus
+     - App: shippable
 
 
   - name: runSh-test
