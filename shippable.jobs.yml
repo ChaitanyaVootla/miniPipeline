@@ -71,8 +71,7 @@ jobs:
      - IN: mini-downstream-parent
      - TASK: managed
     labels:
-     - Team: 42
-     - App: shippable
+     - App: Devel
 
 
   - name: mini-downstream-parent
@@ -85,8 +84,7 @@ jobs:
         - script: echo 'This block executes when the TASK starts'
         - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
     labels:
-     - Team: 42
-     - App: shippable
+     - Team: Linus
 
   - name: mini-downstream-ancestor
     type: runSh
@@ -96,7 +94,6 @@ jobs:
         - script: echo 'This block executes when the TASK starts'
         - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
     labels:
-     - Team: 42
      - App: shippable
   - name: mini-downstream-child
     type: manifest
@@ -107,4 +104,3 @@ jobs:
       - downstream
     labels:
      - Team: 42
-     - App: shippable
