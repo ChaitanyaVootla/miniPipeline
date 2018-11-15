@@ -100,6 +100,7 @@ jobs:
     steps:
      - IN: mini-downstream
      - IN: pipelines-demo-manifest-mini2
+     - IN: pipelines-demo-manifest-mini
      - IN: newJob
      - TASK: managed
     flags:
