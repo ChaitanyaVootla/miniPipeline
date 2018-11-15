@@ -95,7 +95,7 @@ jobs:
         - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
     labels:
      - App: shippable
-  - name: mini-downstream-child
+  - name: mini-downstream-child-mini-downstream-child-mini-downstream-child-mini-downstream-child-mini-downstream-child-mini-downstream-child-mini-downstream-child
     type: manifest
     steps:
      - IN: mini-downstream
