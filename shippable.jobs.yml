@@ -100,8 +100,15 @@ jobs:
     steps:
      - IN: mini-downstream
      - IN: pipelines-demo-manifest-mini2
+     - IN: newJob
      - TASK: managed
     flags:
       - downstream
+    labels:
+     - Team: 42
+  - name: newJob
+    type: manifest
+    steps:
+     - TASK: managed
     labels:
      - Team: 42
