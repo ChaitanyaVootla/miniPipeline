@@ -99,6 +99,7 @@ jobs:
     type: manifest
     steps:
      - IN: mini-downstream
+     - IN: pipelines-demo-manifest-mini2
      - TASK: managed
     flags:
       - downstream
