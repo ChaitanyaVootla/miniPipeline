@@ -109,6 +109,7 @@ jobs:
   - name: newJob
     type: manifest
     steps:
+     - IN: pipelines-demo-manifest-mini2
      - TASK: managed
     labels:
      - Team: 42
