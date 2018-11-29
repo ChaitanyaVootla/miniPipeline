@@ -59,4 +59,3 @@ resources:
     versionTemplate:
       params:
         asd: 123
-
