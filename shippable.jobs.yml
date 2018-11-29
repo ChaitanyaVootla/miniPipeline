@@ -10,6 +10,7 @@ jobs:
     labels:
      - Team: 42
      - App: shippable
+     - priority: low
 
   - name: deploy-pipelines-demo-mini
     type: deploy
