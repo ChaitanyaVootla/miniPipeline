@@ -115,3 +115,44 @@ jobs:
      - TASK: managed
     labels:
      - Team: 42
+
+  - name: j_1
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+
+  - name: j_2
+    type: runSh
+    steps:
+      - IN: j_1
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+
+  - name: j_3
+    type: runSh
+    steps:
+      - IN: j_1
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+
+  - name: j_4
+    type: runSh
+    steps:
+      - IN: j_1
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
+
+  - name: j_5
+    type: runSh
+    steps:
+      - IN: j_2
+      - IN: j_3
+      - IN: j_4
+      - TASK:
+        - script: echo 'This block executes when the TASK starts'
+        - script: echo "versionName=satble" >> $JOB_STATE/runSh.env;
