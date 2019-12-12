@@ -1,21 +1,10 @@
-resources:
-  - name: gitResource
-    type: GitRepo
-    configuration:
-      gitProvider: gitResource
-      path: ChaitanyaVootla/ymlTest
 pipelines: 
   - name: state_test
     steps:
       - name: testReport_u18
         type: Bash
-        configuration:
-          inputResources:
-            - name: gitResource
         execution:
           onExecute:
-            - pushd $res_gitResource_resourcePath
-            - sudo chmod +x echoTest.sh
             - ./echoTest.sh
       
       - name: run_file_restore
