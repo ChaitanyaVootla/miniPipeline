@@ -1,3 +1,8 @@
+resources:
+  - name: pbag
+    type: PropertyBag
+    configuration:
+      conf1: "something"
 pipelines: 
   - name: stressTestPip1
     steps:
@@ -6,3 +11,14 @@ pipelines:
         execution:
           onExecute:
             - echo "done"
+        configuration:
+          outputResources:
+            - name: pbag
+      - name: s2
+        type: Bash
+        execution:
+          onExecute:
+            - echo "done"
+        configuration:
+          inputResources:
+            - name: pbag
