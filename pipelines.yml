@@ -1,7 +1,7 @@
 pipelines: 
-  - name: test
+  - name: stressTestPip_1
     steps:
-      - name: test
+      - name: 1_s1
         type: Bash
         execution:
           onExecute:
